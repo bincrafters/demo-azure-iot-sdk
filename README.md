@@ -36,7 +36,11 @@ This should have compiled the example binary, which you should now be able to ru
 
 ## Advanced Notes
 
+**Learning** : Understanding how all of the pieces in this demo work together is non-trivial.  Conan and CMake are both powerful and feature-rich platforms, which take time to comprehend. Also, packaging the Azure IOT SDK and related libraries required some advanced Conan and CMake techniques because the projects were not laid out with Conan.io packaging in mind.  However, we believe the approach taken here demonstrates a step forward in managing dependencies between C++ components, and so it was worth the effort for us.  We also hope our efforts demonstrate that it's worth learning more about Conan.io, and that it can actually work for virtually any C/C++ project. 
+
 **Compiling Options** : This demo is setup to be simple to get started with little or no experience with Conan or CMake.  However, like many C or C++ libraries, the AzureIOTHubSDK and it's transitive dependencies have many compile time options. Conan and CMake are both capable of passing all the options to dependencies in a straightforward way.
+
+**Package Details** : In addition to the compile time options, there are many other nuances to using the IOTHubSDK and improvements we plan to make to the package itself.  A great deal of time was spent to create the recipes which create the packages.  We will continue to try to keep the packages current with the latest releases on Github. 
 
 **Visual Studio** : VS2017 now has CMake integration.  This project takes special steps to make that work seamlessly with Conan. The key is the use of the following pieces together:
 * include(conan_include.cmake) - Added to the top of the `CMakeLists.txt` file. 
@@ -50,7 +54,7 @@ Other Conan examples on the net are perhaps simpler and don't feature any of the
 
 ## Feedback
 
-If you have further questions or suggestions about this sample, please feel free to open an issue.  If you'd like to reach out to us privately, please use bincrafters at gmail dot com We hope to add more examples over time. 
+If you have further questions or suggestions about this sample, please feel free to open an issue.  If you'd like to reach out to us privately, please use bincrafters at gmail dot com We hope to add more examples over time. We can always use additional committers and would look forward to any PR's. 
 
 Special thanks to Microsoft, Conan.io, and Kitware, for their respective OSS contributions. 
 	
