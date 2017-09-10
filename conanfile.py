@@ -11,5 +11,6 @@ class AzureIotSdkDemoConan(ConanFile):
     requires = "Azure-IoT-SDK-C/1.1.21@bincrafters/testing", "OpenSSL/1.0.2l@conan/stable"
 
     def configure(self):
-        self.options["Azure-IoT-SDK-C"].shared = False
-        self.options["Azure-C-Shared-Utility"].shared = False
+        #self.options["Azure-IoT-SDK-C"].shared = False
+        #self.options["Azure-C-Shared-Utility"].shared = False
+        pass

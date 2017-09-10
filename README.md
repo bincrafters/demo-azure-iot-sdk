@@ -14,25 +14,25 @@ In short, this process requires that CMake and the Conan client be installed. Al
 
 After cloning this repo, use the following standard commands to get into a `build` subdirectory.
 
-	`$ mkdir build && cd build`
+	$ mkdir build && cd build
 	
 Next, invoke the Conan client with the `conan install` command, which will read `conanfile.py` and execute it's instructions.  This includes downloading dependencies and generating a file named `conanbuildinfo.cmake`.  This contains all the CMake variables for the dependencies, with the local paths to the directories where the dependencies were downloaded (in your "local conan cache"). 
 
-    `$ conan install ..`
+    $ conan install ..
 	
 Next, invoke CMake to generate your build files.
 
-	`$ cmake ..`
+	$ cmake ..
 	
 Finally, invoke CMake to call your local build system and build the project:
 
-    `$ cmake --build .`
+    $ cmake --build .
 	
 ## Running the compiled example
 
 This should have compiled the example binary, which you should now be able to run: 
 
-	`$ iothub_sample_client`  
+	$ iothub_sample_client
 
 ## Advanced Notes
 
