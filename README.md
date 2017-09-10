@@ -7,8 +7,8 @@ This repository holds a demo of how to obtain and use the Azure IOTHub SDK for C
 
 In short, this process requires that CMake and the Conan client be installed. Also, Conan requires Python to be installed. 
 
-**Conan Installation Instructions** : Here are the [Official Conan Instructions](http://conanio.readthedocs.io/en/latest/installation.html)  
-**CMake Installation Instructions** :  Here are the [Official CMake Instructions](https://cmake.org/install/)
+Here are the [Official Conan Instructions](http://conanio.readthedocs.io/en/latest/installation.html)  
+Here are the [Official CMake Instructions](https://cmake.org/install/)
 
 ## Basic setup
 
