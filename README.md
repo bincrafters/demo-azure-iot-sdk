@@ -1,5 +1,5 @@
 ## Demo of Azure IOTHub SDK, CMake, and Conan.io
-This repository holds a demo of how to obtain and use the Azure IOTHub SDK for C within a Cmake project (C or C++) in conjunction with [Conan.io](https://conan.io): the modern C/C++ package and dependency manager. 
+This repository holds a demo of how to obtain and use the Azure IOTHub SDK for C within a Cmake project (C or C++) in conjunction with [Conan.io](https://conan.io): the modern C/C++ package and dependency manager.  
 
 [Microsoft Azure IoT Hub device SDK for C](https://github.com/Azure/azure-iot-sdk-c)
 
@@ -32,9 +32,11 @@ Finally, invoke CMake to call your local build system and build the project:
 
 This should have compiled the example binary, which you should now be able to run: 
 
-	$ iothub_sample_client
+	$ \Debug\iothub_sample_client.exe
 
 ## Advanced Notes
+
+**Compiling Options** : This demo is setup to be simple to get started with little or no experience with Conan or CMake.  However, like many C or C++ libraries, the AzureIOTHubSDK and it's transitive dependencies have many compile time options. Conan and CMake are both capable of passing all the options to dependencies in a straightforward way.
 
 **Visual Studio** : VS2017 now has CMake integration.  This project takes special steps to make that work seamlessly with Conan. The key is the use of the following pieces together:
 * include(conan_include.cmake) - Added to the top of the `CMakeLists.txt` file. 
@@ -48,7 +50,7 @@ Other Conan examples on the net are perhaps simpler and don't feature any of the
 
 ## Feedback
 
-If you have further questions or suggestions about this sample, please feel free to open an issue.  We hope to add more examples over time. 
+If you have further questions or suggestions about this sample, please feel free to open an issue.  If you'd like to reach out to us privately, please use bincrafters at gmail dot com We hope to add more examples over time. 
 
 Special thanks to Microsoft, Conan.io, and Kitware, for their respective OSS contributions. 
 	
