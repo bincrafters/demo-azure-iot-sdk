@@ -8,11 +8,7 @@ add_executable(${PROJECT_NAME}
 )
 
 target_link_libraries(${PROJECT_NAME} 
-	crypt32 
-	winhttp
-	Secur32
-	NCrypt
-	ws2_32
+	crypt32 ws2_32 secur32 advapi32 ncrypt winhttp
 	CONAN_PKG::Azure-IoT-SDK-C
 	CONAN_PKG::Azure-C-Shared-Utility
 )
