@@ -18,7 +18,7 @@ After cloning this repo, use the following standard commands to get into a `buil
 	
 Next, invoke the Conan client with the `conan install` command, which will read `conanfile.py` and execute it's instructions.  This includes downloading dependencies and generating a file named `conanbuildinfo.cmake`.  This contains all the CMake variables for the dependencies, with the local paths to the directories where the dependencies were downloaded (in your "local conan cache"). 
 
-    $ conan install ..
+    $ conan install .. --build missing
 	
 Next, invoke CMake to generate your build files.
 
