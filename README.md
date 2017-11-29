@@ -12,6 +12,12 @@ Here are the [Official CMake Instructions](https://cmake.org/install/)
 
 ## Basic setup
 
+### Visual Studio
+This demo is very easy to use in Visual Studio 2017 thanks to it's new CMake Integration.  Simply use `File-> Open-> Open Folder` and browse to the root repository directory which contains `CMakeLists.txt`. 
+
+This will spawn several automatic processes, Visual Studio will run CMake, CMake will execute Conan and get all the dependencies based on your current visual studio settings (x86/x64, Debug/Release, MT/MD, etc).  
+
+### Manually Via Cmake and Conan CLIs
 After cloning this repo, use the following standard commands to get into a `build` subdirectory.
 
 	$ mkdir build && cd build
