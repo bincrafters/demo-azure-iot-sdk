@@ -8,7 +8,7 @@ class AzureIotSdkDemoConan(ConanFile):
     settings = "os", "arch", "compiler", "build_type"
     url = "https://github.com/bincrafters/azure-iot-sdk-demo-conan"
     license = "https://github.com/bincrafters/azure-iot-sdk-demo-conan/blob/master/LICENSE"
-    requires = "Azure-IoT-SDK-C/1.1.27@bincrafters/testing", \
+    requires = "Azure-IoT-SDK-C/1.1.27@bincrafters/stable", \
         "OpenSSL/1.0.2m@conan/stable"
 
     def configure(self):
